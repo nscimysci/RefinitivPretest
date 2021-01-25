@@ -1,0 +1,17 @@
+<div class="col col-xs-3">
+  <input (keyup)="getSearch(searchText)" placeholder="Search ..." type="text" class="form-control"
+    [(ngModel)]="searchText">
+</div>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>No. </th>
+      <th>Name </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of dataSourceShow; let i = index">
+      <td>{{i}}</td>
+      <td>{{item}}</td>
+    </tr>
+</table>
