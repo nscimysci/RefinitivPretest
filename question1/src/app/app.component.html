@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col my-sidebar">
+
+      <input (keyup.enter)="checkNumber(number1)" [(ngModel)]="number1" type="text" name="number1" placeholder="">
+    </div>
+    <div id="parent" class="col text-center my-center">
+      <div class="form-group">
+
+        <select #mySelect (change)='selectValue(mySelect.value)' class="form-control">
+          <option value="1" selected>isPrime</option>
+          <option value="2">isFibonacci</option>
+
+        </select>
+      </div>
+
+    </div>
+    <div class="col my-rightsidebar">
+
+      <label>{{this.isCol3}}</label>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.my-sidebar {
+  -ms-flex: 0 0 200px;
+  flex: 0 0 200px;
+  background-color: greenyellow;
+}
+
+.my-rightsidebar {
+  -ms-flex: 0 0 300px;
+  flex: 0 0 300px;
+  background-color: yellow;
+}
+
+#parent {
+  height: 100vh;
+  display: flex;
+  overflow-x: scroll;
+
+}
+
+
+@media (max-width: 600px) {
+  .my-sidebar {
+    display: none;
+
+  }
+}
